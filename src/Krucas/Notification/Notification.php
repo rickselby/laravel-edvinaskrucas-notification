@@ -126,7 +126,7 @@ class Notification
     /**
      * Return types for a container.
      *
-     * @param $container
+     * @param  $container
      * @return array
      */
     public function getContainerTypes($container)
@@ -141,7 +141,7 @@ class Notification
     /**
      * Set format for a container.
      *
-     * @param $container
+     * @param  $container
      * @param  null  $format
      * @return \Krucas\Notification\Notification
      */
@@ -155,7 +155,7 @@ class Notification
     /**
      * Return format for a container.
      *
-     * @param $container
+     * @param  $container
      * @return string|null
      */
     public function getContainerFormat($container)
@@ -170,7 +170,7 @@ class Notification
     /**
      * Set formats for a container.
      *
-     * @param $container
+     * @param  $container
      * @param  array  $formats
      * @return \Krucas\Notification\Notification
      */
@@ -184,7 +184,7 @@ class Notification
     /**
      * Return formats for a container.
      *
-     * @param $container
+     * @param  $container
      * @return array
      */
     public function getContainerFormats($container)
@@ -271,7 +271,7 @@ class Notification
     /**
      * Fire given event.
      *
-     * @param $event
+     * @param  $event
      * @param  \Krucas\Notification\NotificationsBag  $notificationBag
      * @param  \Krucas\Notification\Message  $message
      * @return array|bool|null
@@ -321,8 +321,8 @@ class Notification
     /**
      * Calls NotificationBag function for a default container.
      *
-     * @param $name
-     * @param $arguments
+     * @param  $name
+     * @param  $arguments
      * @return \Krucas\Notification\NotificationsBag|null
      */
     public function __call($name, $arguments)
