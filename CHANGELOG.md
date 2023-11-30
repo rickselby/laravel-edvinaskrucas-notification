@@ -1,7 +1,44 @@
-#Unreleased
----
+# Changelog
+All notable changes to this project will be documented in this file.
 
-* Fix return type for `count` function 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+
+## [6.5.0]
+### Added
+- Support for PHP 8.3
+
+### Fixed
+- Fix return type for `count` function
+
+## Removed
+- Support for PHP 8.0
+
+## [6.4.0]
+### Added
+- Support for Laravel 10.x
+
+## [6.3.0]
+### Added
+- Support for Laravel 9.x
+
+## [6.2.0]
+### Added
+- Support for Laravel 8.x
+
+## [6.1.0]
+### Added
+- Support for Laravel 7.x
+
+## [6.0.1]
+### Fixed
+- Support for PHP 8.0
+
+### Added
+- Support for Laravel 6.x
+
+## Previous changelog from fork
 
 ---
 

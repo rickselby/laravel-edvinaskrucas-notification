@@ -1,12 +1,8 @@
-**Package is looking for maintainers Please contact me if interested.**
-
-# Notification package for Laravel4 / Laravel5
-
-[![Build Status](https://travis-ci.org/edvinaskrucas/notification.png?branch=master)](https://travis-ci.org/edvinaskrucas/notification)
+# Notification package for Laravel
 
 ---
 
-A simple notification management package for Laravel4.
+A simple notification management package for Laravel.
 
 ---
 
@@ -24,18 +20,19 @@ A simple notification management package for Laravel4.
 
 Just place require new package for your laravel installation via composer.json
 
-    "edvinaskrucas/notification": "5.*"
+    "rickselby/laravel-edvinaskrucas-notification": "6.*"
 
 Then hit ```composer update```
 
 ### Version matrix
 
-| Laravel Version       | Package version          |
-| --------------------- | ------------------------ |
-| = 5.4                 | 5.2.*                    |
-| >= 5.1                | 5.1.*                    |
-| >= 5.0, < 5.1         | 5.0.*                    |
-| >= 4, < 5             | >= 2, <= 3               |
+| Laravel Version | Package version |
+|-----------------|-----------------|
+| 6.x - 10.x      | 6.*             |
+| = 5.4           | 5.2.*           |
+| >= 5.1          | 5.1.*           |
+| >= 5.0, < 5.1   | 5.0.*           |
+| >= 4, < 5       | >= 2, <= 3      |
 
 ### Registering to use it with laravel
 
