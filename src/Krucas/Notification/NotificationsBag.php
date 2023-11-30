@@ -604,7 +604,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->notifications);
     }

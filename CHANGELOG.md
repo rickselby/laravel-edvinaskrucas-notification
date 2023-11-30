@@ -1,3 +1,10 @@
+#Unreleased
+---
+
+* Fix return type for `count` function 
+
+---
+
 #5.1.1
 ---
 
