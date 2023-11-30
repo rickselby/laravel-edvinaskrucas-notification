@@ -79,7 +79,7 @@ class Message implements Renderable, Jsonable, Arrayable
     /**
      * Sets message value, and returns message object.
      *
-     * @param $message
+     * @param  $message
      * @return \Krucas\Notification\Message
      */
     public function setMessage($message)
@@ -102,7 +102,7 @@ class Message implements Renderable, Jsonable, Arrayable
     /**
      * Sets flash value, and returns message object.
      *
-     * @param $flash
+     * @param  $flash
      * @return \Krucas\Notification\Message
      */
     public function setFlash($flash)
@@ -125,7 +125,7 @@ class Message implements Renderable, Jsonable, Arrayable
     /**
      * Sets message format, and returns message object.
      *
-     * @param $format
+     * @param  $format
      * @return \Krucas\Notification\Message
      */
     public function setFormat($format)
@@ -148,7 +148,7 @@ class Message implements Renderable, Jsonable, Arrayable
     /**
      * Sets message type, and returns message object.
      *
-     * @param $type
+     * @param  $type
      * @return \Krucas\Notification\Message
      */
     public function setType($type)
@@ -171,7 +171,7 @@ class Message implements Renderable, Jsonable, Arrayable
     /**
      * Sets message position.
      *
-     * @param $position
+     * @param  $position
      * @return \Krucas\Notification\Message
      */
     public function setPosition($position)
@@ -185,7 +185,7 @@ class Message implements Renderable, Jsonable, Arrayable
      * Set message.
      * Shortcut for `setMessage()`.
      *
-     * @param $message
+     * @param  $message
      * @return \Krucas\Notification\Message
      */
     public function message($message)
@@ -199,7 +199,7 @@ class Message implements Renderable, Jsonable, Arrayable
      * Set format.
      * Shortcut for `setFormat()`.
      *
-     * @param $format
+     * @param  $format
      * @return \Krucas\Notification\Message
      */
     public function format($format)
@@ -239,7 +239,7 @@ class Message implements Renderable, Jsonable, Arrayable
      * Set message position.
      * Shortcut for `setPosition()`.
      *
-     * @param $position
+     * @param  $position
      * @return \Krucas\Notification\Message
      */
     public function position($position)

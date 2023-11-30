@@ -73,7 +73,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Creates new NotificationBag object.
      *
-     * @param $container
+     * @param  $container
      * @param  array  $types
      * @param  null  $defaultFormat
      * @param  array  $formats
@@ -100,7 +100,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Add new available type of message to bag.
      *
-     * @param $type
+     * @param  $type
      * @return \Krucas\Notification\NotificationsBag
      */
     public function addType($type)
@@ -137,7 +137,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Determines if type is available in container.
      *
-     * @param $type
+     * @param  $type
      * @return bool
      */
     public function typeIsAvailable($type)
@@ -160,7 +160,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Extract type from a given string.
      *
-     * @param $name
+     * @param  $name
      * @return bool|array
      */
     protected function extractType($name)
@@ -183,7 +183,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Set default format for all message types.
      *
-     * @param $format
+     * @param  $format
      * @return \Krucas\Notification\NotificationsBag
      */
     public function setDefaultFormat($format)
@@ -206,7 +206,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Set formats for a given types.
      *
-     * @param $formats
+     * @param  $formats
      * @return \Krucas\Notification\NotificationsBag
      */
     public function setFormats($formats)
@@ -221,8 +221,8 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Set format for a given type.
      *
-     * @param $type
-     * @param $format
+     * @param  $type
+     * @param  $format
      * @return \Krucas\Notification\NotificationsBag
      */
     public function setFormat($type, $format)
@@ -237,7 +237,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Return format for a given type.
      *
-     * @param $type
+     * @param  $type
      * @return bool|string
      */
     public function getFormat($type)
@@ -260,7 +260,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Clear format for a given type.
      *
-     * @param $type
+     * @param  $type
      * @return \Krucas\Notification\NotificationsBag
      */
     public function clearFormat($type)
@@ -285,7 +285,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Returns valid format.
      *
-     * @param $format
+     * @param  $format
      * @param  null  $type
      * @return null
      */
@@ -300,7 +300,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
      * Message can be string, array (array can contain string for message, or array of message and format).
      * Flashes flashable messages.
      *
-     * @param $type
+     * @param  $type
      * @param  string|\Krucas\Notification\Message|\Closure  $message
      * @param  bool  $flash
      * @param  null  $format
@@ -358,7 +358,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Returns all messages for given type.
      *
-     * @param $type
+     * @param  $type
      * @return \Krucas\Notification\Collection
      */
     public function get($type)
@@ -526,7 +526,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Adds type for rendering.
      *
-     * @param $type
+     * @param  $type
      * @return \Krucas\Notification\NotificationsBag
      */
     public function addToGrouping($type)
@@ -545,7 +545,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Removes type from rendering.
      *
-     * @param $type
+     * @param  $type
      * @return \Krucas\Notification\NotificationsBag
      */
     public function removeFromGrouping($type)
@@ -612,7 +612,7 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Check if a message is set for given type.
      *
-     * @param $type
+     * @param  $type
      * @return bool
      */
     public function has($type = null)
@@ -641,8 +641,8 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Fire event for a given message.
      *
-     * @param $event
-     * @param $message
+     * @param  $event
+     * @param  $message
      * @return bool
      */
     protected function fireEvent($event, $message)
@@ -688,8 +688,8 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     /**
      * Execute short version of function calls.
      *
-     * @param $name
-     * @param $arguments
+     * @param  $name
+     * @param  $arguments
      * @return \Krucas\Notification\NotificationsBag|string
      */
     public function __call($name, $arguments)
