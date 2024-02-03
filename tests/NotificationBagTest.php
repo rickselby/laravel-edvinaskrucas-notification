@@ -125,8 +125,8 @@ class NotificationBagTest extends TestCase
 
         $notificationBag->setFormats(
             [
-                'success'   => 'OK - :message',
-                'info'      => 'INFO - :message',
+                'success' => 'OK - :message',
+                'info' => 'INFO - :message',
             ]
         );
         $this->assertEquals('OK - :message', $notificationBag->getFormat('success'));
@@ -160,8 +160,8 @@ class NotificationBagTest extends TestCase
 
         $notificationBag->setFormats(
             [
-                'success'   => 'OK - :message',
-                'info'      => 'INFO - :message',
+                'success' => 'OK - :message',
+                'info' => 'INFO - :message',
             ]
         );
         $this->assertEquals('OK - :message', $notificationBag->getFormat('success'));
@@ -181,8 +181,8 @@ class NotificationBagTest extends TestCase
 
         $notificationBag->setFormats(
             [
-                'success'   => 'OK - :message',
-                'info'      => 'INFO - :message',
+                'success' => 'OK - :message',
+                'info' => 'INFO - :message',
             ]
         );
         $this->assertEquals('OK - :message', $notificationBag->getFormat('success'));
@@ -618,16 +618,16 @@ class NotificationBagTest extends TestCase
 
         $this->assertEquals(
             [
-                'container'     => 'test',
-                'format'        => ':message',
-                'types'         => ['info'],
+                'container' => 'test',
+                'format' => ':message',
+                'types' => ['info'],
                 'notifications' => [
                     [
-                        'message'   => 'test',
-                        'format'    => ':message',
-                        'type'      => 'info',
-                        'flash'     => false,
-                        'position'  => null,
+                        'message' => 'test',
+                        'format' => ':message',
+                        'type' => 'info',
+                        'flash' => false,
+                        'position' => null,
                     ],
                 ],
             ],
@@ -645,16 +645,16 @@ class NotificationBagTest extends TestCase
         $this->assertEquals(
             json_encode(
                 [
-                    'container'     => 'test',
-                    'format'        => ':message',
-                    'types'         => ['info'],
+                    'container' => 'test',
+                    'format' => ':message',
+                    'types' => ['info'],
                     'notifications' => [
                         [
-                            'message'   => 'test',
-                            'format'    => ':message',
-                            'type'      => 'info',
-                            'flash'     => false,
-                            'position'  => null,
+                            'message' => 'test',
+                            'format' => ':message',
+                            'type' => 'info',
+                            'flash' => false,
+                            'position' => null,
                         ],
                     ],
                 ]

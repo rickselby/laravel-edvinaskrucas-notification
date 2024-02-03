@@ -29,10 +29,10 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
      * @var array
      */
     protected $matcher = [
-        'add'       => '{type}',
-        'instant'   => '{type}Instant',
-        'clear'     => 'clear{uType}',
-        'show'      => 'show{uType}',
+        'add' => '{type}',
+        'instant' => '{type}Instant',
+        'clear' => 'clear{uType}',
+        'show' => 'show{uType}',
     ];
 
     /**
@@ -569,10 +569,10 @@ class NotificationsBag implements Arrayable, Jsonable, Countable
     public function toArray()
     {
         $arr = [
-            'container'         => $this->container,
-            'format'            => $this->getDefaultFormat(),
-            'types'             => $this->getTypes(),
-            'notifications'     => $this->notifications->toArray(),
+            'container' => $this->container,
+            'format' => $this->getDefaultFormat(),
+            'types' => $this->getTypes(),
+            'notifications' => $this->notifications->toArray(),
         ];
 
         return $arr;
